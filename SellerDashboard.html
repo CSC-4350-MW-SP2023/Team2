@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <title>Billing Information</title>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <style>
+             h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            }
+            body {
+                background-image: url('groceries.webp');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            div {
+                height: auto;
+                width: 300px;
+                margin-left: 19%;
+                margin-top: 8%;
+                background-color: white;
+                border: 4px solid rgb(58, 207, 58);
+                border-radius: 15px;
+                padding: 20px;
+                display: inline-block;
+                
+            }
+            .div2 {
+                height: auto;
+                width: 400px;
+                margin-left: 3%;
+                margin-top: 2%;
+                background-color: white;
+                border: 4px solid rgb(58, 207, 58);
+                border-radius: 15px;
+                padding: 20px;
+                display: inline-block;
+            }
+            .divScroll {
+            overflow-y:scroll;
+            height:300px;
+            width:auto;
+            text-align: left;
+            border: none;
+            }
+
+            img {
+                position: absolute;
+            }
+            input {
+                border: 1px solid black;
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
+        </style>
+
+        
+        <img src="food_saver.png" width=100 height=100>
+            <div class= "div">
+        <font size="5">
+            <h1 align="center" >Current Listing</h1>
+            </font>
+            <center>
+                <div class="divScroll" style="font-size: 18px;">
+                
+                <p class="alignleft">Cinnamon Toast Cereal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1.00</p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Edit</button></p>
+                
+                <p class="alignleft">Canned Baked Beans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$2.75</p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Edit</button></p>
+                
+                <p class="alignleft">Crunchy Peanut Butter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1.99</p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Edit</button></p>
+    
+                <p class="alignleft">Frozen Tilapia Fish&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.50</p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Edit</button></p>
+                
+                </div>
+    
+                <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;left:1000px">Delete Selected</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;">&nbsp;&nbsp;Add Item&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+        <div class="div2">
+            <font size="4">
+                <h1 align="center" >Account Information</h1>
+                </font>
+                <br>
+                Store Name: Rosie's Bakery
+                <br>
+                Store Address: 123 Sesame St.
+                <br>
+                Account Holder Since: 2023
+                <br>
+                Change Store Name: <input type="text" name="Storename" size="15" style="font-size:25px">
+                <br>
+                Change Store Address: <input type="text" name="Address" size="15" style="font-size:25px">
+                <br><br>
+                <button type="button" style="background-color: darkgreen; color:aliceblue; width:60px; height:40px; font-size: 12px;">Submit</button>
+            
+    </center>
+</div>
+    </body>
+</html>
