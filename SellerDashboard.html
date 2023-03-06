@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Seller Dashboard</title>
+        
+        <style>
+            .divScroll {
+            overflow-y:scroll;
+            height:300px;
+            width:95%;
+            text-align: left;
+            background-color: aliceblue;
+            border-style: solid;
+            border-color: darkgreen;
+            }
+
+            .alignleft {
+            float: left;
+            }
+            .alignright {
+            float: right;
+            }
+            h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            }
+            body { 
+            background-image: url('banner_food.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            </style>
+    </head>
+
+
+    <body>
+
+        <div style="background-color: ivory; border: 5px solid green; height: fit-content; width: 100%; font-size:65px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-bottom: 0.5em; text-align: center; vertical-align: center;">
+            <img class="alignleft" src="food_saver.png" width=100px height=100px>
+             <span style="">Dashboard</span>
+        </div>
+
+        <div class="alignleft" style="background-color:darkseagreen; border: 5px solid green; height: 20%; width:30%; margin-left: 5%; text-align: center; font-size: 30px; margin-bottom:5em;">
+            <span style="font-size: 40px; text-align:center;"> 
+            Current Listing 
+            </span> 
+        Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price
+        <center>
+            <div class="divScroll" style="font-size: 30px;">
+            
+            <p class="alignleft">Cinnamon Toast Cereal</p>
+            <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Edit</button>$1</p>
+            
+            <p class="alignleft">Canned Baked Beans</p>
+            <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Edit</button>$2</p>
+            
+            <p class="alignleft">Crunchy Peanut Butter</p>
+            <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Edit</button>$3</p>
+
+            <p class="alignleft">Frozen Tilapia Fish</p>
+            <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Edit</button>$2</p>
+            
+            </div>
+
+            <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;">Delete Selected</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;">Add<br/>Item</button>
+
+        </center>
+        
+        </div> 
+
+        <div class="alignleft" style="background-color:darksalmon; border: 5px solid green; margin-left: 0.5em; height: fit-content; padding-bottom: 1em; width:60%; font-size: 50px;">
+            <div style="font-size:40px; text-align: center">
+                <br/>
+                <span style="font-size: 50px;">Account Information</span><br/><br/>
+                &nbsp;Store Name: Rosie's Bakery
+                <br>
+                &nbsp;Store Address: 123 Seaseme St.
+                <br>
+                &nbsp;Account Holder Since: 2023
+                <br><br>
+                <hr width="80%">
+                <div style="font-size:30px">
+                    <br>
+                    Change Store Name: &nbsp; <input type="text" name="Name" size="15" style="font-size:25px">
+                    <button type="button" style="background-color: darkgreen; color:aliceblue; width:80px; height:30px; font-size: 15px;">Save</button>
+                    <br>
+                    Change Store Address:&nbsp; <input type="text" name="Address" size="15" style="font-size:25px">
+                    <button type="button" style="background-color: darkgreen; color:aliceblue; width:80px; height:30px; font-size: 15px;">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
