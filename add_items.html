@@ -1,32 +1,31 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Add Items</title> 
-    <body>
-        <style>
-            
-            img {
-                float:left;
-                vertical-align: center;
+    <style>            
+        img {
+            float:left;
+            vertical-align: center;
             }
-            span {
-                padding: 10px;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 45pt;
-                vertical-align: center;
+        span {
+            padding: 10px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45pt;
+            vertical-align: center;
             }
-            h1 {
+        h1 {
             color: black;
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 45pt;
             margin-top: 5px;
             }
-            body { 
+        body { 
             background-image: url('banner_food.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
             }
-            .container {
+        .container {
             background-color: white;
             border:5px solid rgb(58, 207, 58);
             height: 80px;
@@ -35,14 +34,14 @@
             padding:15px;
             margin-bottom: 40px;
             }
-            .submit-button {
+        .submit-button {
             background-color: black;
             height: 70px;
             width: 200px;
             margin-left: 42%;
             border: 3px outset white;
             }
-            .items {
+        .items {
             background-color: white;
             border: 2px solid black;
             height: 50px;
@@ -51,35 +50,57 @@
             padding: 2px;
             margin-bottom: 20px;
             }
-            h2 {
+        h2 {
             color: black;
             text-align: center;
             }
-        </style>
-        
-        <div class="container">
+        form {
+            text-align: center;
+        }
+        form input {
+            background-color: white;
+            border: 2px solid black;
+            height: 50px;
+            width: 700px;
+            text-align: center;
+            vertical-align: center;
+            font-size: 15pt;
+        }
+        form button {
+            background-color: black;
+            height: 70px;
+            width: 200px;
+            color: white;
+            border: 3px outset white;
+            padding: 10px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20pt;
+            vertical-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
         <img src="food_saver.png" width="100" height="100">
         <span>Add Items</span>
     </div>
-    <div class="items">
-        <h2>Name:</h2>
+    <div class=".formbackground">
+        <form action="">
+            <input type="text" name="itemname" placeholder="Item Name"/>
+            <br/><br/>
+            <input type="text" name="itemtype" placeholder="Item Type"/>
+            <br/><br/>
+            <input type="text" name="expdate" placeholder="Expiration Date"/>
+            <br/><br/>
+            <input type="text" name="price" placeholder="Unit Price"/>
+            <br/><br/>
+            <input type="text" name="quantity" placeholder="Quantity"/>
+            <br/><br/>
+            <input class="usertext" type="password" name="password" placeholder="Password" required/>
+            <br/><br/>
+            <button class="userprompt" type="submit" name="add" value="Add Item"/>Add Item<br/>
+        </form>
     </div>
-    <div class="items">
-        <h2>Type:</h2>
-    </div>
-    <div class="items">
-        <h2>Expiration Date:</h2>
-    </div>
-    <div class="items">
-        <h2>Unit Price:</h2>
-    </div>
-    <div class="items">
-        <h2>Quantity:</h2>
-    </div>
-    <div class="items"></div>
-    <div class="items"></div>
-    <div class="submit-button">
-        <h2 style="color:white">Submit</h2>
-    </div>
-    </body>
-</head>
+</body>
+</html>
