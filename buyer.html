@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping</title>
+        <style>
+             h1 {
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            }
+            body {
+                background-image: url('groceries.webp');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            div {
+                height: auto;
+                width: 300px;
+                margin-left: 19%;
+                margin-top: 8%;
+                background-color: white;
+                border: 4px solid rgb(58, 207, 58);
+                border-radius: 15px;
+                padding: 20px;
+                display: inline-block;
+                
+            }
+            .div2 {
+                height: auto;
+                width: 400px;
+                margin-left: 3%;
+                margin-top: 2%;
+                background-color: white;
+                border: 4px solid rgb(58, 207, 58);
+                border-radius: 15px;
+                padding: 20px;
+                display: inline-block;
+            }
+            .divScroll {
+            overflow-y:scroll;
+            height:300px;
+            width:auto;
+            text-align: left;
+            border: none;
+            }
+
+            img {
+                position: absolute;
+            }
+            input {
+                border: 1px solid black;
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>    
+        <img src="food_saver.png" width=100 height=100>
+            <div class= "div">
+        <font size="5">
+            <h1 align="center" >Filters</h1>
+            </font>
+        <center>
+            <input type="text" name="name" placeholder="Item Name"/><br/>
+            Price: from <input type="text" style="width:30px;"> to <input type="text" style="width:30px;"><br/>
+            <input type="text" name="store" placeholder="Store Name"/><br/>
+            Expires on or after: <input type="date" id="expdate" name="expdate"/><br/>
+            Within: <input type="text" name="max distance" placeholder="3" style="width:30px;"/> miles<br/>
+            <select id="type">
+                <option value="type">Item Type</option>
+                <option value="meat">Meat</option>
+                <option value="vegetable">Vegetable</option>
+                <option value="fruit">Fruit</option>
+                <option value="dairy">Dairy</option>
+            </select><br/>
+        </center>
+            <center>
+                
+            </div>
+        <div class="div2">
+            <font size="4">
+                <h1 align="center">Items        
+                    <span style="text-align:right; font-size:20px;">Sort by: 
+                        <select id="sortby">
+                            <option value="distance">Distance</option>
+                            <option value="name">Item Name</option>
+                            <option value="price">Price</option>
+                            <option value="expdate">Expiration Date</option>
+                        </select>
+                    </span>
+                </h1>
+            </font>
+                
+                <div class="divScroll" style="font-size: 18px;">
+                
+                <p class="alignleft">
+                    Cinnamon Toast Cereal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1.00<br/>
+                    Store: Rosie's&nbsp;&nbsp;&nbsp;&nbsp;Distance: 1mi
+                </p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Select</button></p>
+                
+                <p class="alignleft">
+                    Canned Baked Beans&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$2.75<br/>
+                    Store: Rosie's&nbsp;&nbsp;&nbsp;&nbsp;Distance: 1mi
+                </p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px;">Select</button></p>
+                
+                <p class="alignleft">
+                    Crunchy Peanut Butter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1.99<br/>
+                    Store: Corner Shop&nbsp;&nbsp;&nbsp;&nbsp;Distance: 2.5mi
+                </p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Select</button></p>
+    
+                <p class="alignleft">
+                    Frozen Tilapia Fish&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$6.50<br/>
+                    Store: Corner Shop&nbsp;&nbsp;&nbsp;&nbsp;Distance: 2.5mi
+                </p>
+                <p class="alignright"><button type="button" style="background-color: darkgreen; color:aliceblue; width:50px; height:30px; font-size: 15px; position:relative;left:0px; top:-3px">Select</button></p>
+                
+                </div>
+
+                <center>
+                <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;left:1000px">Buy Selected</button> <br/>
+                <button type="button" style="background-color: darkgreen; color:aliceblue; width:100px; height:50px; font-size: 15px;">Clear Selection</button>
+                </center>
+            
+    </center>
+</div>
+    </body>
+</html>
